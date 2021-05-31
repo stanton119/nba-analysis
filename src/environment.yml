@@ -1,0 +1,29 @@
+name: nba_analysis_env
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - pip
+  
+  # Computation
+  - kedro
+  - numpy
+  - pandas
+  - bs4
+  - html5lib
+  - pytorch
+  - pytorch-lightning
+
+  # Plotting
+  - matplotlib
+
+  # Debugging
+  - jupyter
+  - pylint
+  - rope
+  - black
+
+  - pip:
+    - kedro-viz
+    - kedro-docker
+    - "kedro[pandas.ParquetDataSet]"
